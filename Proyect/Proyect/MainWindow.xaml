@@ -1,0 +1,22 @@
+﻿<Window x:Class="Proyect.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Proyect"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="470.27" Width="610.135">
+    <Grid>
+        <Border Background="Black" BorderBrush="Black" BorderThickness="1" CornerRadius="8,8,8,8">
+            <StackPanel Margin="30" Background="White" >
+                <Label Content="Login user" Margin="20" HorizontalAlignment="Center" FontSize="18" FontFamily="Arial Black" />
+                <Separator Height="10" Width="300" Margin="0" Background="Black" />
+                <Label Content="_User:" Margin="20" FontSize="16" FontFamily="Arial Black"/>
+                <TextBox Name="txtuser" BorderBrush="Black" Margin="10"/>
+                <Label Content="_Password:" Margin="20" FontSize="16" FontFamily="Arial Black"/>
+                <PasswordBox Name="txtpass" BorderBrush="Black" Margin="10" />
+                <Button x:Name="button" Content="Login" Height="30" Width="100"  FontSize="14" FontFamily="Arial Black" Click="button_Click"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
